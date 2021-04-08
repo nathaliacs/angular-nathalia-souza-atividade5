@@ -1,0 +1,16 @@
+<div class="container-fluid div-conteiner">
+  <h1>Juros simples</h1>
+  <p>Valor do emprestimo</p>
+  <input type="number" [(ngModel)]="valorInicial" placeholder="Ex: 150" />
+
+  <p>Quantidade de parcelas em meses</p>
+  <input type="number" [(ngModel)]="nParcelas" placeholder="Ex: 5" />
+
+  <p>Taxa de juros em porcentagem (%)</p>
+  <input type="number" [(ngModel)]="juros" placeholder="Ex: 2,5" />
+
+  <p *ngFor="let valorFinal of getJSimples();">O valor final ficará em R$ {{valorFinal.toFixed(2)}}
+  </p>
+
+
+</div>

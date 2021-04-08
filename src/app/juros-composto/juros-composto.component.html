@@ -1,0 +1,25 @@
+<div class="container-fluid div-conteiner">
+  <h1>Juros compostos</h1>
+  <p>Valor do emprestimo</p>
+  <input type="number" [(ngModel)]="valorInicial" placeholder="Ex: 150" />
+
+  <p>Taxa de juros em porcentagem (%)</p>
+  <input type="number" [(ngModel)]="juros" placeholder="Ex: 2,5" />
+
+  <p>Quantidade de parcelas em meses</p>
+  <input type="number" [(ngModel)]="nParcelas" placeholder="Ex: 5" />
+
+  <table>
+    <thead>
+      <th>Número de Parcelas</th>
+      <th>Valor das Parcelas</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let valorGerado of getJurosComposto(); index as nParcelas">
+        <td>{{nParcelas + 1}}</td>
+        <td>{{valorGerado.toFixed(2)}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

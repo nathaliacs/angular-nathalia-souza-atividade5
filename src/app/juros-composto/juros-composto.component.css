@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+table {
+  padding: 5px;
+  overflow-x: auto;
+  width: 100%;
+  text-align: center;
+  min-width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+th {
+  background-color: #eee;
+  padding: 5px;
+  border: 1px solid #fff;
+}
+tr {
+  background-color: #eee;
+}
+tr:nth-child(odd) {
+  background-color: white;
+}
+td {
+  padding: 5px;
+  border: 1px solid #fff;
+}
+
+input {
+  background-color: #eee;
+  border: 0;
+  padding: 3px;
+  width: 100%;
+  max-width: 500px;
+  min-width: 200px;
+  margin: 5px;
+}
+
+p {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-left: 5px;
+}
